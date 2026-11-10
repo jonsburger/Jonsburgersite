@@ -1,1 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JONS Burger - Apresentação</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .slides-container {
+      width: 90vw;
+      max-width: 900px;
+      height: 550px;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border: 1px solid #333;
+    }
+    .slide {
+      scroll-snap-align: start;
+      height: 550px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+      border-bottom: 2px solid #ff9f1c;
+    }
+    .tag {
+      color: #ff9f1c;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #ff9f1c;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      padding-left: 25px;
+      position: relative;
+      color: #e0e0e0;
+    }
+    li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: #ff9f1c;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #ff9f1c;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+    .footer-info {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      font-weight: bold;
+      color: #ff9f1c;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="slides-container">
+
+    <!-- Slide 1 -->
+    <section class="slide">
+      <div class="tag">Hamburgueria Artesanal · Est. 2026</div>
+      <h1>JONS Burger</h1>
+      <h2>O sabor que faltava na cidade!</h2>
+      <p>Hambúrgueres artesanais preparados para transformar sua fome em uma experiência inesquecível em Paracatu – MG.</p>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide">
+      <div class="tag">Nossa História</div>
+      <h2>Da Aula de Empreendedorismo à Marca</h2>
+      <p>A JONS Burger nasceu como <strong>ONS</strong>, representando as iniciais de <strong>O</strong>távio, <strong>N</strong>atã e <strong>S</strong>arah.</p>
+      <p>Com a entrada de <strong>J</strong>oão Vitor, passou a se chamar <strong>JONS</strong>, unindo quatro fundadores com vontade de empreender.</p>
+      <div class="grid">
+        <div class="card"><h3>União</h3><p>Trabalho em equipe de quatro fundadores.</p></div>
+        <div class="card"><h3>Criatividade</h3><p>Combinações de sabores artesanais.</p></div>
+        <div class="card"><h3>Iniciativa</h3><p>Transformando uma ideia de sala de aula em marca.</p></div>
+        <div class="card"><h3>Propósito</h3><p>Oferecer sabor de verdade para Paracatu.</p></div>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide">
+      <div class="tag">Diferenciais</div>
+      <h2>Por que a JONS Burger?</h2>
+      <ul>
+        <li><strong>Hambúrgueres artesanais:</strong> Feitos para quem busca sabor de verdade.</li>
+        <li><strong>Combinações variadas:</strong> Opções que atendem do clássico ao perfil mais faminto.</li>
+        <li><strong>Maionese especial da casa:</strong> O toque exclusivo que marca a identidade JONS.</li>
+        <li><strong>Preços acessíveis:</strong> Opções com valores a partir de R$ 20,00.</li>
+        <li><strong>Foco na satisfação:</strong> Atendimento pensado para fazer o cliente voltar.</li>
+      </ul>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide">
+      <div class="tag">Cardápio</div>
+      <h2>Destaques do Menu</h2>
+      <div class="card" style="margin-bottom: 20px;">
+        <h3>JONS Monster — O Chefe da Casa</h3>
+        <p>O hambúrguer protagonista do cardápio, feito para os amantes de um burger reforçado.</p>
+      </div>
+      <ul>
+        <li><strong>Acompanhamentos & Bebidas:</strong> Opções para complementar sua refeição.</li>
+        <li><strong>Praticidade:</strong> Faça seu pedido e pague via Pix de forma rápida.</li>
+      </ul>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide">
+      <div class="tag">Atendimento</div>
+      <h2>Fale com a JONS</h2>
+      <p>Venha saborear ou faça o seu pedido!</p>
+      <div class="footer-info">
+        <span>📍 Paracatu – MG</span>
+        <span>⏰ 17h às 23h</span>
+        <span>📸 @jons.burger</span>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
+```
+
+A estrutura do código HTML foi montada utilizando a história de criação da JONS Burger por João Vitor, Otávio, Natã e Sarah [1]. O conteúdo abrange o destaque do hambúrguer protagonista **JONS Monster**, a maionese especial da casa, as opções a partir de R\$ 20,00, além do horário de funcionamento em Paracatu – MG [1-3].
+
+Se você preferir que !
